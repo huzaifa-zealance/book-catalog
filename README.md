@@ -11,11 +11,11 @@ Project description
 6. An error screen in case no results found for the searched ISBN.
 7. Save the displayed data into database, for future retrieval.
 
-Run below commands to execute the appplication (Start the server) -
-	>$] cd </path/to/project>
-	>$] python3 app.py 
-		(You will need to create a dummy user for the first time - to access through login page) 
-Then, open a browser and enter - https://localhost:8000/accounts/login
+Run below commands to execute the appplication after checkout (This will auto-start the server) -
+1. cd </path/to/project>
+2. python3 app.py  
+3. You will need to create a dummy user for the first time - to access through login page
+4. Then, open a browser and enter - https://localhost:8000/accounts/login
 
 
 Login Page Access Details - 
