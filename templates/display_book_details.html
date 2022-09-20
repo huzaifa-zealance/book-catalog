@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Book Details{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+ 	<h1>Hi {{ user.username }}! </h1>
+ 	<p>Below are the details of the book searched for -</p>
+ 	<ol>
+ 		<li>
+ 			<b><u>Book ISBN : {{ isbn|safe }}</b></u>
+ 			<ul>
+	 			<li><b>Book Title</b> : {{ title|safe }} </li>
+	 			<li><b>Book Author</b> : {{ authors|safe }}	</li>
+	 			<li><b>Book Page Counts</b> : {{ page_count|safe }}	</li>
+	 			<li><b>Book Avg Rating</b> : {{ avg_rating|safe }}	</li>
+ 			</ul>
+ 		</li>
+ 	</ol>
+ 	
+  	
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'login' %}">Log In</a>
+{% endif %}
+{% endblock %}

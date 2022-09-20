@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Book Details{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+ 	<h1>Hi {{ user.username }}! </h1>
+ 	<p>No details found for this ISBN : {{ isbn|safe }} </p>
+  	
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'login' %}">Log In</a>
+{% endif %}
+{% endblock %}
