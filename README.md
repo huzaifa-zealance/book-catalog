@@ -1,5 +1,5 @@
 # Book Catalog - Django Web Application
-Can search ISBN and display and save book details from google API.
+To search any ISBN using google API and display + save the book details. 
 
 Project description
 
@@ -13,7 +13,7 @@ Project description
 
 Run below commands to execute the appplication after checkout (This will auto-start the server) -
 1. cd </path/to/project>
-2. python3 app.py  
+2. python3 app.py
 3. You will need to create a dummy user for the first time - to access through login page
 4. Then, open a browser and enter - https://localhost:8000/accounts/login
 
